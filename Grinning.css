@@ -1,0 +1,312 @@
+/* Apply styles to the body element */
+body {
+  min-width: 30%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif; /* Add your preferred font-family */
+}
+
+/* Style for background images */
+.Back {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 100%;
+}
+
+/* Navigation styles */
+.nav {
+  padding: 5px;
+  margin: 0;
+  text-align: right;
+}
+.logo {
+  float: left;
+  max-width: 80px; /* Adjust the maximum width as needed */
+  height: auto;
+}
+
+/* Style for the logo image */
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Style for all buttons */
+button {
+  background-color: rgb(54, 5, 5);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+/* Add CSS for the "About" button */
+button.about-button,button.review {
+  background-color: rgb(54, 5, 5);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button.about-button:hover {
+  opacity: 0.8; 
+}
+
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Style for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  text-align: left;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+
+/* Modal content styles */
+.modalcont {
+  background-color: rgb(233, 233, 189);
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 25%;
+  float: right;
+}
+
+/* Container styles */
+.container {
+  padding: 16px;
+  text-align: left;
+}
+
+/* Waviy text animation styles */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+  font-size: 75px;
+  text-align: left;
+}
+
+.waviy span {
+  font-family: 'Alfa Slab One', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  position: relative;
+  display: inline-block;
+  color: brown;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes waviy {
+  0%, 40%, 100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
+/* Container1 styles */
+.container1 {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* H2 styles */
+h2 {
+    margin-bottom: 20px; /* Add margin to separate from the waviy text */
+}
+
+/* Left and Right Container styles */
+.containerleft,
+.containerright {
+  height: auto;
+  width: 50%;
+  padding-top: 150px;
+}
+
+/* Positioning for Right Container */
+.containerright {
+  padding-top: 75px;
+  padding-left: 50px;
+  padding-right: 50px;
+  float: right;
+}
+
+/* Clearfix to ensure proper layout */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.RightRecomendation {
+  height: auto;
+  width: auto;
+  padding-top: 150px;
+  text-align: center;
+  padding-left: 100px;
+  font-size: 20px;
+  padding-right: 100px;
+}
+.LeftRecomendation{
+  height: auto;
+  width: 50%;
+  padding-top: 200px;
+}
+
+
+h2 {
+  color: #333;
+  font-family: tahoma;
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 1.5;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: 550px;
+}
+
+h2 span {
+  font-size: 20px;
+  margin-left: 130px;
+}
+
+.message {
+  background-color: yellow;
+  color: #333;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  position: absolute;
+  padding-left: 0.5rem;
+  top: 0.2rem;
+  left: 250px;
+  animation: openclose 5s ease-in-out infinite;
+}
+
+.word1, .word2, .word3 {
+  font-family: tahoma;
+}
+
+@keyframes openclose {
+  0% {
+    top: 0.2rem;
+    width: 0;
+  }
+  5% {
+    width: 0;
+  }
+  15% {
+    width: 230px;
+  }
+  30% {
+    top: 0.2rem;
+    width: 230px;
+  }
+  33% {
+    top: 0.2rem;
+    width: 0;
+  }
+  35% {
+    top: 0.2rem;
+    width: 0;
+  }
+  38% {
+    top: -4.5rem;
+    
+  }
+  48% {
+    top: -4.5rem;
+    width: 190px;
+  }
+  62% {
+    top: -4.5rem;
+    width: 190px;
+  }
+  66% {
+    top: -4.5rem;
+    width: 0;
+    text-indent: 0;
+  }
+  71% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  86% {
+    top: -9rem;
+    width: 285px;
+  }
+  95% {
+    top: -9rem;
+    width: 285px;
+  }
+  98% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  100% {
+    top: 0;
+    width: 0;
+    text-indent: 0;
+  }
+}
+.ReviewSection{
+  height: auto;
+  width: 100%;
+  padding-top: 500px; 
+}
+
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}

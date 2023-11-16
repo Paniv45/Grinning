@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grinning</title>
+    <link rel="stylesheet" href="Grinning.css">
+    <script type="text/javascript" src="Grinning.js"></script>
+</head>
+
+<body>
+    <div class="nav">
+        <nav>
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEGD66MAPj1br20CqzmI3PpnsdPehlCHl6ruihYad_KQ&s">
+            </div>
+            <button class="about-button" onclick="scrollToAboutSection()" style="width:auto;text-align: left;">About</button>
+            
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;text-align: left;">Login</button>
+            <div id="id01" class="modal">
+                <form class = "modalcont" onsubmit="return loginPage(this);" >
+                <div class="container">
+                    <label for="uname"><b>Username is Paniv_Kapoor</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname"required>
+                    <label for="psw"><b>Password is password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+                    <button type="submit">Login</button>
+                    <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <b><span class="psw" style="text-align:right;">Forgot <a href="#">password?</a></span></b>
+                </div>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <div class="containerright">
+    <div class="background">
+        <img class="Back" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            style="width:100%">
+        <img class="Back" src="https://img.freepik.com/free-photo/attractive-happy-funny-emotion-stylish-woman-shopaholic-red-trendy-dress-holding-colorful-shopping-bags-pink-wall-isolated-sale-excited-spring-summer-fashion-trend_285396-7329.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1697155200&semt=ais"
+            style="width:100%">
+        <img class="Back" src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            style="width:100%">
+
+            <div id="about-section" class="RightRecomendation">
+                <p style="color: brown;"></p><br><br><br> <br style="color: brown;">Discover the latest in fashion at Grinning. Elevate your wardrobe with our curated collection of trendy and timeless pieces. From casual essentials to statement-making styles, we have something for every fashion enthusiast. Explore a world of possibilities with our premium quality fabrics and sustainable choices, ensuring that you not only look good but feel good too. Embrace your unique style and shop with confidence at Grinning, your one-stop destination for all your clothing needs. Start browsing now and let your fashion journey begin!.
+            </div>
+    </div>
+    </div>
+    <div class="containerleft">
+        <h2>
+            <span>always be</span>
+            <div class="message">
+              <div class="word1">Gen-Z</div>
+              <div class="word2">Cool </div>
+              <div class="word3">modern</div>
+            </div>
+          </h2>
+        <div class = container1>
+            
+            <br>
+            <div class="waviy">
+            <span style="--i:1">G</span>
+            <span style="--i:2">R</span>
+            <span style="--i:3">I</span>
+            <span style="--i:4">N</span>
+            <span style="--i:5">N</span>
+            <span style="--i:6">I</span>
+            <span style="--i:7">N</span>
+            <span style="--i:8">G</span>
+            <span style="--i:9">.</span>
+            <span style="--i:10">.</span>
+            <span style="--i:11">.</span>
+            </div>
+            
+        </div> 
+        <br>
+            
+    </div>
+    <div class="LeftRecomendation">
+        <h1 style="color: brown; padding-left: 30px;">About:</h1>
+       <img src="https://i.pinimg.com/originals/4b/e4/b9/4be4b9a81debc9f1837c5530f097179e.jpg" style="height: 500px; width: 500px; padding-left: 50px;">
+    </div>
+    
+        </div>
+        <div id="footer-container">
+            <footer style="background-color: brown; text-align: center; color: white ;">
+                <h3>All rights reserved to @ Grinning.</h3>
+            </footer>
+    
+</body>
+</html>
