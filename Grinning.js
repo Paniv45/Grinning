@@ -51,9 +51,16 @@ document.addEventListener("DOMContentLoaded", function () {
     reviewSection.scrollIntoView({ behavior: "smooth" });
   }
   
-  window.onresize = function () {
-    if (window.innerWidth < 0.85 * window.screen.availWidth) {
-      window.resizeTo(0.85 * window.screen.availWidth, window.innerHeight);
-      alert("Minimum width reached. Cannot minimize further.Kindly view in full screen for best expeerience");
+  function checkDeviceType() {
+    if (window.innerWidth < 1500) { 
+      alert("Error: Please open this website on a laptop or larger screen for the best experience.");
     }
+  }
+
+  window.onload = function() {
+    checkDeviceType();
+  };
+
+  window.onresize = function() {
+    checkDeviceType();
   };
