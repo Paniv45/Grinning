@@ -51,16 +51,4 @@ document.addEventListener("DOMContentLoaded", function () {
     reviewSection.scrollIntoView({ behavior: "smooth" });
   }
   
-  function checkDeviceType() {
-    if (window.innerWidth < 1500) { 
-      alert("Error: Please open this website on a laptop or larger screen for the best experience.");
-    }
-  }
-
-  window.onload = function() {
-    checkDeviceType();
-  };
-
-  window.onresize = function() {
-    checkDeviceType();
-  };
+ 
