@@ -114,12 +114,7 @@ function logout() {
     window.location.assign("index.html");
     console.log("Logged Out");
 }
-window.onresize = function () {
-    if (window.innerWidth < 0.85 * window.screen.availWidth) {
-      window.resizeTo(0.85 * window.screen.availWidth, window.innerHeight);
-      alert("Minimum width reached. Cannot minimize further.Kindly view in full screen for best expeerience");
-    }
-};
+
 
 function toggleHidden() {
     var hiddenButtonsContainer = document.querySelector('.hidden-buttons-container');
