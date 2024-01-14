@@ -33,7 +33,6 @@ body {
   height: auto;
 }
 
-
 /* Full-width input fields */
 input[type="text"],
 input[type="password"] {
@@ -55,8 +54,10 @@ button {
   cursor: pointer;
   width: 100%;
 }
+
 /* Add CSS for the "About" button */
-button.about-button,button.review {
+button.about-button,
+button.review {
   background-color: rgb(54, 5, 5);
   color: white;
   padding: 14px 20px;
@@ -67,9 +68,8 @@ button.about-button,button.review {
 }
 
 button.about-button:hover {
-  opacity: 0.8; 
+  opacity: 0.8;
 }
-
 
 button:hover {
   opacity: 0.8;
@@ -158,7 +158,7 @@ button:hover {
 
 /* H2 styles */
 h2 {
-    margin-bottom: 20px; /* Add margin to separate from the waviy text */
+  margin-bottom: 20px; /* Add margin to separate from the waviy text */
 }
 
 /* Left and Right Container styles */
@@ -183,6 +183,7 @@ h2 {
   clear: both;
   display: table;
 }
+
 .RightRecomendation {
   height: auto;
   width: auto;
@@ -192,12 +193,12 @@ h2 {
   font-size: 20px;
   padding-right: 100px;
 }
-.LeftRecomendation{
+
+.LeftRecomendation {
   height: auto;
   width: 50%;
   padding-top: 200px;
 }
-
 
 h2 {
   color: #333;
@@ -298,10 +299,11 @@ h2 span {
     text-indent: 0;
   }
 }
-.ReviewSection{
+
+.ReviewSection {
   height: auto;
   width: 100%;
-  padding-top: 500px; 
+  padding-top: 500px;
 }
 
 .footer-container {
@@ -309,4 +311,60 @@ h2 span {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+
+/* Add these styles for responsiveness */
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+  .containerleft,
+  .containerright {
+    width: 100%;
+    padding-top: 50px;
+  }
+
+  .LeftRecomendation {
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  .RightRecomendation {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .message {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  .footer-container {
+    position: static;
+  }
+
+  .modalcont {
+    width: 80%;
+    margin: 5% auto;
+  }
+}
+
+/* Adjustments for even smaller screens */
+@media only screen and (max-width: 480px) {
+  .message {
+    font-size: 14px;
+  }
+
+  .LeftRecomendation img {
+    width: 80%;
+    height: auto;
+  }
 }
